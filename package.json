@@ -1,0 +1,35 @@
+{
+  "name": "frontend-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for modern Frontend development",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamsalves/frontend-boilerplate.git"
+  },
+  "author": "Adams Alves",
+  "license": "ISC",
+  "homepage": "https://github.com/adamsalves/frontend-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "handlebars": "^4.0.12"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.4",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^5.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0",
+    "gulp-wrap": "^0.14.0",
+    "html5-boilerplate": "^6.1.0",
+    "lost": "^8.3.0",
+    "merge-stream": "^1.0.1"
+  }
+}
