@@ -9,9 +9,17 @@ const stylus = require('gulp-stylus');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const lost = require('lost');
+const babel = require('gulp-babel');
+
 
 function copyJS() {
   return src('src/js/*.js')
+  .pipe(dest('public/js'));
+}
+
+function jsBabel() {
+  return src('src/js/main.js')
+    .pipe(babel({presets: ['@babel/env']}))
     .pipe(dest('public/js'));
 }
 
@@ -76,4 +84,4 @@ function templates() {
     .pipe(dest('public/js/'));
 };
 
-exports.default = parallel(copyJS, copyVendorJS, copyCSS, styles, copyImg, handlebarsRunTime, templates);
+exports.default = parallel(copyJS, jsBabel, copyVendorJS, copyCSS, styles, copyImg, handlebarsRunTime, templates);

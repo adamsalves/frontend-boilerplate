@@ -7,6 +7,7 @@
  - [x] Handlebars
  - [x] PostCSS
  - [x] Html5 Boilerplate
+ - [x] Gulp Babel
 
 ## Instructions
 
