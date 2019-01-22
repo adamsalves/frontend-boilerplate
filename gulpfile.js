@@ -10,7 +10,8 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const lost = require('lost');
 const babel = require('gulp-babel');
-
+const cssnano = require('cssnano');
+const uglify = require('gulp-uglify');
 
 function copyJS() {
   return src('src/js/*.js')
@@ -20,6 +21,7 @@ function copyJS() {
 function jsBabel() {
   return src('src/js/main.js')
     .pipe(babel({presets: ['@babel/env']}))
+    .pipe(uglify())
     .pipe(dest('public/js'));
 }
 
@@ -36,7 +38,8 @@ function copyCSS() {
 function styles() {
   const processors = [
     lost,
-    autoprefixer()
+    autoprefixer(),
+    cssnano()
   ];
 
   return src('src/stylus/style.styl')

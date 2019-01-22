@@ -8,6 +8,8 @@
  - [x] PostCSS
  - [x] Html5 Boilerplate
  - [x] Gulp Babel
+ - [x] CSS Nano - Minify CSS
+ - [x] Uglify - Minify JavaScript
 
 ## Instructions
 
