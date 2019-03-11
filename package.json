@@ -4,7 +4,8 @@
   "description": "Boilerplate for modern Frontend development",
   "main": "index.js",
   "scripts": {
-    "start": "gulp && node index.js",
+    "dev": "gulp",
+    "prod": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "autoprefixer": "^9.4.4",
+    "browser-sync": "^2.26.3",
     "cssnano": "^4.1.8",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",

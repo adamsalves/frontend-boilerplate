@@ -10,25 +10,38 @@
  - [x] Gulp Babel
  - [x] CSS Nano - Minify CSS
  - [x] Uglify - Minify JavaScript
+ - [x] BrowserSync
 
 ## Instructions
 
-Clone this repository
+### Clone this repository
 
 ```sh
+
 git clone https://github.com/adamsalves/frontend-boilerplate.git
+
 ```
 
-Install dependencies
+### Install dependencies
 
 ```sh
+
 npm install
+
 ```
 
-Start application
+### Start development
 
 ```sh
-npm start
+
+npm run dev
+
 ```
 
+### Start production
 
+```sh
+
+npm run prod
+
+```
